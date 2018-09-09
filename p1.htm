@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Basic Caluculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class = "container">
+		<h1>CALCULATOR</h1>
+		<div class="box" id="opanel" align="center">
+		 <div class="row r1">
+            <div class="col" >
+            	 <form name="form" ><br/>
+
+            		<input class=" form-control " id="panel" name="panel" placeholder="0" disabled><br/>
+
+            		<button type="button" class="btn btn-default btn" name="btn7" value="7" onclick="calC(btn7.value);" >7</button>
+            		<button type="button" class="btn btn-default btn" name="btn8" value="8" onclick="calC(btn8.value);" >8</button>
+            		<button type="button" class="btn btn-default btn" name="btn9" value="9" onclick="calC(btn9.value);">9</button>
+            		<button type="button" class="btn btn-danger btn" name="bttnplus" value="+"  onclick="calC(bttnplus.value);">+</button>
+            		<button type="button" class="btn btn-default btn" name="btn4" value="4" onclick="calC(btn4.value);">4</button>
+            		<button type="button" class="btn btn-default btn" name="btn5" value="5" onclick="calC(btn5.value);">5</button>
+            		<button type="button" class="btn btn-default btn" name="btn6" value="6" onclick="calC(btn6.value);">6</button>
+            		<button type="button" class="btn btn-danger btn" name="bttnminus" value="-" onclick="calC(bttnminus.value);">-</button>
+            		<button type="button" class="btn btn-default btn" name="btn1" value="1" onclick="calC(btn1.value);">1</button>
+            		<button type="button" class="btn btn-default btn" name="btn2" value="2" onclick="calC(btn2.value);">2</button>
+            		<button type="button" class="btn btn-default btn" name="btn3" value="3" onclick="calC(btn3.value);">3</button>
+            		<button type="button" class="btn btn-danger btn" name="bttnmult" value="*" onclick="calC(bttnmult.value);">*</button>
+            		<button type="button" class="btn btn-default btn" name="btndot" value="." onclick="calC(btndot.value);">.</button>
+            		<button type="button" class="btn btn-default btn" name="btn0" value="0" onclick="calC(btn0.value);">0</button>
+            		<button type="button" class="btn btn-danger btn" name="bttnmod" value="%" onclick="calC(bttnmod.value);">%</button>
+            		<button type="button" class="btn btn-danger btn" name="bttndiv" value="/" onclick="calC(bttndiv.value);">/</button>
+            		<button type="button" class="btn btn-success butn" name="butnCE" value="CE" onclick="CE();">CE</button>
+            		<button type="button" class="btn btn-success butn" name="butn=" value="=" onclick="panel.value=eval(panel.value);">=</button>
+            	</form>	
+            </div>
+         </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
